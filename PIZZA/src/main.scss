@@ -1,5 +1,7 @@
 .container {
     height: auto;
+    width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 150px);
@@ -57,3 +59,4 @@
 body {
     font-family: 'Inter-Regular', Times, serif;
 }
+
