@@ -16,11 +16,16 @@
     grid-area: 1 / 2 / 4 / 3;
     background-color: rgb(255, 248, 183);
 }
-
 .composition {
     grid-area: 4 / 1 / 6 / 3;
     background-color: rgb(250, 233, 156);
-}
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .composition ul {
+    flex: 1;
+  }
 
 @media screen and (max-width: 1000px) {
     .list-order {
@@ -35,28 +40,3 @@
         grid-area: 3 / 1 / 5 / 3;
     }
 }
-
-@font-face {
-    font-family: "Inter-Regular";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local("Inter-Regular"), 
-        url("../fonts/Inter-Regular.woff2") format("woff2"),
-        url("../fonts/Inter-Regular.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Oswald-Medium";
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: local("Oswald-Medium"), 
-        url("../fonts/Oswald-Medium.woff2") format("woff2"),
-        url("../fonts/Oswald-Medium.woff") format("woff");
-}
-
-body {
-    font-family: 'Inter-Regular', Times, serif;
-}
-

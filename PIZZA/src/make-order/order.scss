@@ -1,0 +1,21 @@
+button {
+    color: yellow;
+    width: 200px;
+    height: 50px;
+    background-color: orange;
+  }
+
+  .make-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.make-order .image {
+  margin-bottom: 20px;
+}
+
+.make-order button {
+  margin-top: 20px;
+}

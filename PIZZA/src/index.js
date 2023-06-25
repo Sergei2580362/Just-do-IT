@@ -1,8 +1,6 @@
 import styles from './main.scss';
-import composition from './composition'
-import main from './composition'
-import list_order from './list-order'
-import makeOrder from './makeOrder'
-
+import { makeOrder } from './make-order';
+import listOrder from './list-order';
+import composition from './composition';
 
 

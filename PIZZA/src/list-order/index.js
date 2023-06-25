@@ -1,30 +1,30 @@
-import styles from './list.scss'
-import {composition, list1} from "../composition"
-import {list2} from "../composition"
-import {list3} from "../composition"
-import {list4} from "../composition"
-import {list5} from "../composition"
-import {list6} from "../composition"
-import {list7} from "../composition"
-import {list8} from "../composition"
-import {list9} from "../composition"
-import {list10} from "../composition"
-import {list11} from "../composition"
-import {list12} from "../composition"
-import {list13} from "../composition"
-import {list14} from "../composition"
-import {list15} from "../composition"
-const orderList = document.querySelector('.list-order')
+import styles from './list.scss';
 
-const table = document.createElement('ul');
-const table2 = document.createElement('li');
-const table3 = document.createElement('li');
-const table4 = document.createElement('li');
+const listOrder = document.querySelector('.list-order');
+const listItems = document.querySelectorAll('ul.main li, ul.sauce li');
+// const mainListItems = document.querySelectorAll('.main li');
 
+// const title = document.createElement('h2');
+// title.textContent = 'Область просмотра заказа';
+// listOrderContainer.appendChild(title);
 
-composition.addEventListener("click", function (e) {
-    table.innerHTML = e.target.innerHTML;
-    orderList.append(table)
-   
-    });
+listItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    if (!item.classList.contains('selected')) {
+      const newItem = document.createElement('li');
+      newItem.textContent = item.textContent;
+      newItem.classList.add('selected');
+
+      listOrder.innerHTML = ''; // Очищаем содержимое .list-order
+      listOrder.appendChild(newItem); // Добавляем новый элемент в .list-order
+
+      item.classList.add('selected'); // Добавляем класс selected к выбранному элементу
+
+      newItem.addEventListener('click', () => {
+        newItem.remove(); // Удаляем выбранный элемент из .list-order
+        item.classList.remove('selected'); // Удаляем класс selected у соответствующего элемента в .main
+      });
+    }
+  });
+});
 
