@@ -1,9 +1,35 @@
-.composition {
-    display: flex;
-    justify-content: space-around;
-    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
-    font-size: large;
-    
+.items {
+ display: flex;
+ justify-content: space-evenly;
+ font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+font-size: large;
+    }
+
+
+
+.main {
+   position: fixed ;
+   margin-top: 100px;
+   margin-right: 800px;
+  
+
+}
+
+.ingredients {
+    margin-top: 100px;
+    position: fixed; 
+    margin-right: 260px;
+}
+
+.cheese {
+    margin-top: 100px;
+    position: fixed;
+    margin-left: 350px
+}
+.sauce {
+    position: fixed;
+    margin-top: 100px;
+    margin-left: 850px;
 }
 
 

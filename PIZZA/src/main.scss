@@ -1,10 +1,26 @@
 .container {
+    position: fixed;
     height: auto;
     width: 1200px;
     margin: 0 auto;
+    margin-left: 150px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 150px);
+}
+
+.priceWindow {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(250, 207, 89);
+    position: fixed;
+    margin-top: 400px;
+    margin-left: 220px;
+}
+
+.order {
+    color: rgb(255, 248, 183);
+    margin-left: 140px;
 }
 
 .list-order {
@@ -60,3 +76,63 @@ body {
     font-family: 'Inter-Regular', Times, serif;
 }
 
+
+
+
+.pic {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    margin-top: 80px;
+    margin-left: 150px;
+    
+}
+
+
+
+.first {
+    background-color: rgb(255, 248, 183);
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 125px;
+    position: fixed;
+}
+
+.second {
+    background-color: rgb(255, 248, 183);
+    width: 150px;
+    height: 150px;
+    margin-top: 200px;
+    margin-left: 125px;
+    position: fixed;
+   
+}
+
+.third {
+    background-color: rgb(255, 248, 183);
+    width: 150px;
+    height: 150px;
+    margin-bottom: 200px;
+    margin-left: 275px;
+   position: fixed;
+    bottom: 303px;
+}
+.forth {
+    background-color: rgb(255, 248, 183);
+    width: 150px;
+    height: 150px;
+    margin-top: 45px;
+    margin-left: 275px;
+   bottom: 653px;
+    position: fixed;
+}
+
+.fift {
+    width: 250px;
+    height: 100px;
+    background-color: rgb(255, 248, 183);
+    position: fixed;
+    margin-top: 350px;
+    margin-left: 150px;
+}
